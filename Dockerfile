@@ -6,7 +6,7 @@ maintainer Niall O'Higgins <niallo@frozenridge.co>
 # do this as single-line run until https://github.com/dotcloud/docker/issues/1171 is fixed
 
 # create strider user
-run useradd -m strider
+run useradd -m -s /bin/bash strider
 
 # update package cache and install some packages
 run apt-get -y update
